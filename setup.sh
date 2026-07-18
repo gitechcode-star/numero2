@@ -45,8 +45,8 @@ export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
 # // Exporting URL Host
-export Server_URL="raw.githubusercontent.com/NevermoreSSH/Blueblue/main/test"
-export Server1_URL="raw.githubusercontent.com/NevermoreSSH/Blueblue/main/limit"
+export Server_URL="raw.githubusercontent.com/gitechcode-star/numero2/main/test"
+export Server1_URL="raw.githubusercontent.com/gitechcode-star/numero2/main/limit"
 export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
@@ -142,7 +142,7 @@ mkdir -p /usr/local/etc/xray
 mkdir -p /var/lib/scrz-prem >/dev/null 2>&1
 echo "IP=$host" >> /var/lib/scrz-prem/ipvps.conf
 echo $host > /etc/xray/domain
-wget https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/gitechcode-star/numero2/main/cf.sh && chmod +x cf.sh && ./cf.sh
 
 sleep 2
 
@@ -151,26 +151,26 @@ echo -e "$white\033[0;34m┌─────────────────�
 echo -e "                          ⇱ INSTALL DOMAIN ⇲            "
 echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
 sleep 1
-wget https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/gitechcode-star/numero2/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install jembot
 echo -e "$white\033[0;34m┌─────────────────────────────────────────┐${NC}"
 echo -e " \E[41;1;39m           ⇱ Install Jembot ⇲            \E[0m$NC"
 echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
 sleep 1 
-wget -q https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/jembot.sh && chmod +x jembot.sh && ./jembot.sh
+wget -q https://raw.githubusercontent.com/gitechcode-star/numero2/main/jembot.sh && chmod +x jembot.sh && ./jembot.sh
 #install ssh-vpn
 echo -e "$white\033[0;34m┌─────────────────────────────────────────┐${NC}"
 echo -e " \E[41;1;39m          ⇱ Install SSH / WS ⇲           \E[0m$NC"
 echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
 sleep 1
-wget -q https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget -q https://raw.githubusercontent.com/gitechcode-star/numero2/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #install ins-xray
 echo -e "$white\033[0;34m┌─────────────────────────────────────────┐${NC}"
 echo -e " \E[41;1;39m            ⇱ Install Xray ⇲             \E[0m$NC"
 echo -e "$white\033[0;34m└─────────────────────────────────────────┘${NC}"
 sleep 1 
-wget -q https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget -q https://raw.githubusercontent.com/NevermoreSSH/Blueblue/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget -q https://raw.githubusercontent.com/gitechcode-star/numero2/main/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget -q https://raw.githubusercontent.com/gitechcode-star/numero2/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
 # // Download Data
 echo -e "${GREEN}Download Data${NC}"
@@ -249,8 +249,8 @@ chmod +x /usr/bin/bbr
 
 
 # > install gotop
-    gotop_latest="$(curl -s https://api.github.com/repos/NevermoreSSH/gotop/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
-    gotop_link="https://github.com/NevermoreSSH/gotop/releases/download/gotopV4/gotop_v4.2.0_linux_amd64.deb"
+    gotop_latest="$(curl -s https://api.github.com/repos/gitechcode-star/gotop/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
+    gotop_link="https://github.com/gitechcode-star/gotop/releases/download/gotopV4/gotop_v4.2.0_linux_amd64.deb"
     curl -sL "$gotop_link" -o /tmp/gotop.deb
     dpkg -i /tmp/gotop.deb >/dev/null 2>&1
 
@@ -328,7 +328,7 @@ else
 gg="AM"
 fi
 echo -e "[ ${green}Pleas Wait Update DB ${NC} ]"
-git clone https://github.com/NevermoreSSH/limit.git /root/limit/ &> /dev/null
+git clone https://github.com/gitechcode-star/limit.git /root/limit/ &> /dev/null
 babu=$(cat /etc/.geovpn/license.key)
 echo -e "$babu $IP $Masa_Laku_License_Berlaku_Sampai" >> /root/limit/limit.txt
 cd /root/limit
@@ -339,7 +339,7 @@ cd /root/limit
     git add . &> /dev/null
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/NevermoreSSH/limit
+    git remote add origin https://github.com/gitechcode-star/limit
     git push -f https://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@github.com/kenDevXD/limit.git &> /dev/null
 cd
 echo "1.1" >> /home/.ver
@@ -401,6 +401,50 @@ rm -fr /root/ins-xray.sh
 rm -fr /root/setup.sh
 rm -fr /root/domain
 history -c
+
+# // Optimización Avanzada de Red y Límites del Sistema (Aceleración de Transferencia)
+echo -e "${INFO} Aplicando optimizaciones de velocidad y límites del sistema..."
+cat << 'EOF' > /etc/sysctl.d/99-custom-network.conf
+net.core.default_qdisc = fq
+net.ipv4.tcp_congestion_control = bbrplus
+net.core.rmem_max = 67108864
+net.core.wmem_max = 67108864
+net.core.rmem_default = 65536
+net.core.wmem_default = 65536
+net.ipv4.tcp_rmem = 4096 87380 67108864
+net.ipv4.tcp_wmem = 4096 65536 67108864
+net.ipv4.tcp_fastopen = 3
+net.ipv4.tcp_tw_reuse = 1
+net.ipv4.tcp_fin_timeout = 15
+net.ipv4.tcp_keepalive_time = 600
+net.ipv4.tcp_keepalive_probes = 5
+net.ipv4.tcp_keepalive_intvl = 15
+net.core.somaxconn = 65535
+net.core.netdev_max_backlog = 65535
+net.ipv4.tcp_max_syn_backlog = 65535
+net.ipv4.tcp_max_tw_buckets = 2000000
+net.ipv4.tcp_max_orphans = 65535
+net.netfilter.nf_conntrack_max = 1048576
+net.netfilter.nf_conntrack_tcp_timeout_established = 86400
+net.ipv4.tcp_mtu_probing = 1
+net.ipv4.ip_forward = 1
+EOF
+sysctl --system >/dev/null 2>&1
+
+cat << 'EOF' >> /etc/security/limits.conf
+* soft nofile 1048576
+* hard nofile 1048576
+root soft nofile 1048576
+root hard nofile 1048576
+EOF
+
+if ! grep -q "pam_limits.so" /etc/pam.d/common-session; then
+    echo "session required pam_limits.so" >> /etc/pam.d/common-session
+fi
+if ! grep -q "pam_limits.so" /etc/pam.d/common-session-noninteractive; then
+    echo "session required pam_limits.so" >> /etc/pam.d/common-session-noninteractive
+fi
+echo -e "${OKEY} Optimización de red y límites aplicada exitosamente."
 
 read -p "$( echo -e "Press ${orange}[ ${NC}${green}Enter${NC} ${CYAN}]${NC} For Reboot") "
 reboot
