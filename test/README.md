@@ -1,11 +1,20 @@
+# AutoScript Install XRAY / SSH Websocket
+
+Repositorio optimizado para la instalación automática de servicios VPN (XRAY, SSH Websocket, Trojan, VLESS, etc.) en servidores VPS.
 
 ---
 
-### 💡 Cómo aplicarlo:
-1. Ve a tu repositorio en GitHub: `https://github.com/gitechcode-star/numero2`
-2. Haz clic en el archivo `README.md`.
-3. Haz clic en el icono del **lápiz** (Editar este archivo).
-4. Borra todo el contenido actual y **pega el código de arriba**.
-5. Baja hasta el final de la página y haz clic en el botón verde **"Commit changes..."** (Confirmar cambios).
+## ⚙️ Requisitos Previos
 
-¡Con esto, cualquier persona que visite tu repositorio verá los comandos correctos y se instalará directamente desde tu cuenta! ¿Necesitas que ajuste o agregue alguna otra sección (como una lista de puertos o comandos útiles)?
+- Un servidor VPS limpio (recién formateado).
+- Sistema operativo: **Debian 9 / 10 / 11** o **Ubuntu 18.04 / 20.04 / 22.04**.
+- Acceso como usuario `root`.
+- Se recomienda actualizar el sistema antes de la instalación.
+
+---
+
+## 🔄 Actualización del Sistema (Primera Instalación)
+
+### ♦️ Para Debian 9 / 10 / 11
+```bash
+apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot
